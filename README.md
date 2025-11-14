@@ -1,29 +1,29 @@
-# 📬 Telegram Auto-Forward Bot
+# Telegram Auto-Forward Bot
 
 A lightweight Node.js bot that automatically forwards messages from specified private chats or groups directly to your **Saved Messages** using Telegram's official **MTProto API** (via `telegram` library).
 
-> ⚠️ **No fallback mode:**  
+> **No fallback mode:**  
 > If forwarding is restricted in a chat, the bot will skip the message without copying or re-sending it.
 
 ---
 
-## ✨ Features
+## Features
 
-### 🔁 Automatic Forwarding
+### Automatic Forwarding
 Forward every message from selected chats/groups into your Saved Messages.
 
-### 📡 Multi-Source Listening
+### Multi-Source Listening
 You can monitor:
 - **Private chats** - Direct messages from specific users
 - **Groups/Channels** - Public or private groups and channels
 - **Filter by username or ID** - Whitelist specific users or groups
 
-### 🎯 Flexible Filtering
+### Flexible Filtering
 - **MODE**: Choose between `private`, `group`, or `all`
 - **FORWARD_TYPE**: Forward `all` messages or only `media` messages
 - **Whitelist**: Use `ALLOWED_GROUPS` and `ALLOWED_USERS` to specify which sources to monitor
 
-### 🪶 Minimal & Safe
+### Minimal & Safe
 - Uses official [telegram](https://gram.js.org/) library (MTProto)
 - Session-based authentication (no repeated login)
 - No database
@@ -32,7 +32,7 @@ You can monitor:
 
 ---
 
-## 📦 Installation
+## Installation
 
 ```bash
 git clone https://github.com/yourusername/telegram-auto-forward-bot
@@ -48,7 +48,7 @@ npm install telegram input dotenv
 
 ---
 
-## 🔑 Getting API Credentials
+## Getting API Credentials
 
 Before using this bot, you need to obtain your **API ID** and **API Hash** from Telegram:
 
@@ -80,7 +80,7 @@ Before using this bot, you need to obtain your **API ID** and **API Hash** from 
 
 ---
 
-## ⚙️ Configuration
+## Configuration
 
 Create a `.env` file in the project root:
 
@@ -145,7 +145,7 @@ FORWARD_TYPE=all
 
 ---
 
-## ▶️ Start the Bot
+## Start the Bot
 
 ### First Time (Login Required)
 
@@ -166,7 +166,7 @@ The bot will use the saved session and start immediately without asking for cred
 
 ---
 
-## 📜 How It Works
+## How It Works
 
 1. **Authentication**: The bot logs in using your phone number and creates a persistent session.
 2. **Event Listening**: Listens for all incoming messages from monitored chats.
@@ -182,7 +182,7 @@ Incoming Message → Filter by MODE → Filter by Whitelist → Filter by FORWAR
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 .
@@ -196,7 +196,7 @@ Incoming Message → Filter by MODE → Filter by Whitelist → Filter by FORWAR
 
 ---
 
-## 📝 Important Notes
+## Important Notes
 
 ### Session Management
 - `session.txt` stores your login session - **keep it secure!**
@@ -221,7 +221,7 @@ Incoming Message → Filter by MODE → Filter by Whitelist → Filter by FORWAR
 
 ---
 
-## 🛡️ .gitignore Recommendation
+## .gitignore Recommendation
 
 Create a `.gitignore` file:
 
@@ -246,7 +246,7 @@ Thumbs.db
 
 ---
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 ### "Invalid API_ID or API_HASH"
 - Double-check your credentials from my.telegram.org
@@ -267,21 +267,11 @@ Thumbs.db
 - Ensure you have access to read messages from that chat
 - Some messages may have forwarding disabled (bot will skip them)
 
----
-
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
----
-
-## 📄 License
-
-This project is [MIT](LICENSE) licensed.
-
----
-
-## ⚠️ Disclaimer
+## Disclaimer
 
 This bot is for educational and personal use only. Make sure to:
 - Comply with Telegram's Terms of Service
@@ -289,10 +279,22 @@ This bot is for educational and personal use only. Make sure to:
 - Not use this for spam or unauthorized data collection
 - Use at your own risk
 
----
-
-## 💬 Support
+## Support
 
 If you have any questions or need help, feel free to open an issue.
 
----
+
+## License
+
+MIT License
+
+## Resources
+
+- [Foundry Documentation](https://book.getfoundry.sh/)
+- [OpenZeppelin Contracts](https://docs.openzeppelin.com/)
+- [Contact](https://t.me/thevooidx)
+
+## Contact Me
+
+- 💬 Telegram: [@thevooidx](https://t.me/thevooidx)
+- 💎 ETH/BNB: `0xc72b9402553f008c05c4e36042b91d9249e53a4b`
