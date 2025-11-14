@@ -5,8 +5,6 @@ A lightweight Node.js bot that automatically forwards messages from specified pr
 > **No fallback mode:**  
 > If forwarding is restricted in a chat, the bot will skip the message without copying or re-sending it.
 
----
-
 ## Features
 
 ### Automatic Forwarding
@@ -30,8 +28,6 @@ You can monitor:
 - No file storage
 - Perfect for simple personal automation
 
----
-
 ## Installation
 
 ```bash
@@ -45,8 +41,6 @@ npm install
 ```bash
 npm install telegram input dotenv
 ```
-
----
 
 ## Getting API Credentials
 
@@ -77,8 +71,6 @@ Before using this bot, you need to obtain your **API ID** and **API Hash** from 
 
 6. **Keep Them Secret**  
    ⚠️ Never share these credentials publicly or commit them to Git!
-
----
 
 ## Configuration
 
@@ -143,8 +135,6 @@ MODE=all
 FORWARD_TYPE=all
 ```
 
----
-
 ## Start the Bot
 
 ### First Time (Login Required)
@@ -164,8 +154,6 @@ After successful login, a `session.txt` file is created to store your session.
 
 The bot will use the saved session and start immediately without asking for credentials.
 
----
-
 ## How It Works
 
 1. **Authentication**: The bot logs in using your phone number and creates a persistent session.
@@ -180,8 +168,6 @@ The bot will use the saved session and start immediately without asking for cred
 Incoming Message → Filter by MODE → Filter by Whitelist → Filter by FORWARD_TYPE → Forward to Saved Messages
 ```
 
----
-
 ## Project Structure
 
 ```
@@ -193,8 +179,6 @@ Incoming Message → Filter by MODE → Filter by Whitelist → Filter by FORWAR
 ├── .gitignore       # ignore sensitive files
 └── README.md        # this file
 ```
-
----
 
 ## Important Notes
 
@@ -219,8 +203,6 @@ Incoming Message → Filter by MODE → Filter by Whitelist → Filter by FORWAR
 - Use this bot responsibly and respect others' privacy
 - This bot is for personal use only
 
----
-
 ## .gitignore Recommendation
 
 Create a `.gitignore` file:
@@ -243,8 +225,6 @@ npm-debug.log*
 .DS_Store
 Thumbs.db
 ```
-
----
 
 ## Troubleshooting
 
