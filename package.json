@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "fs": "^0.0.1-security",
+    "input": "^1.0.1",
+    "path": "^0.12.7",
+    "telegram": "^2.26.22"
+  },
+  "type": "commonjs",
+  "devDependencies": {
+    "prettier": "3.6.2"
+  },
+  "scripts": {
+    "format": "prettier --write ."
+  }
+}
